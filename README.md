@@ -11,4 +11,4 @@ Difficulties with the task:
 
 # Problems to fix
 - white bg in h1 should be wider
-- phone mockup behaviour
+- smooth scroll

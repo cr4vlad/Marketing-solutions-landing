@@ -5,9 +5,14 @@
   color: #005570;
 }
 
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 .hero-bg {
   position: absolute;
-  width: 1041px;
+  width: 66%;
   height: 1178px;
   left: 0px;
   top: 0px;
@@ -33,11 +38,12 @@ header {
 
 .logo {
   font-family: 'Rubik', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #2DAFD7;
   height: 80px;
   line-height: 80px;
   text-align: center;
+  padding-left: 0;
   background: url(../img/bg_logo.png) center no-repeat;
 }
 
@@ -47,7 +53,7 @@ header {
 
 #screen1 .left-block h1 {
   font-family: 'Rubik', sans-serif;
-  font-size: 44px;
+  font-size: 32px;
   margin: 40px 0;
   letter-spacing: 0.04em;
 }
@@ -125,8 +131,8 @@ header {
   width: 300px;
   position: relative;
   left: 405px;
-  top: -410px;
-  margin-bottom: -410px;
+  top: -378px;
+  margin-bottom: -378px;
 }
 
 #screen1 img.phone {
@@ -152,11 +158,10 @@ header {
 
 #screen2 .col .number {
   position: absolute;
-  right: 5px;
-  top: 5px;
   font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-  font-size: 144px;
+  right: 5px;
+  top: 60px;
+  font-size: 60px;
   color: rgba(246, 246, 246, 0.8);
   z-index: 0;
 }
@@ -165,13 +170,13 @@ header {
   position: relative;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   z-index: 1;
 }
 
 #screen2 .col p {
   position: relative;
-  font-size: 18px;
+  font-size: 12px;
   letter-spacing: 0.04em;
   margin: 10px;
   z-index: 1;
@@ -189,10 +194,138 @@ header {
 
 #screen3 {
   width: 100%;
+  margin-bottom: 150px;
 }
 
 #screen3 h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 36px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+#screen3 .two-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen3 .two-blocks .info-block {
+  max-width: 390px;
+  min-height: 180px;
+  margin: 20px 0;
+  background-color: #F3FCFF;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+          box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+  border-radius: 5px;
+}
+
+#screen3 .two-blocks .info-block h3 {
+  color: #2DAFD7;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin: 20px;
+}
+
+#screen3 .two-blocks .info-block p {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  margin: 0 20px;
+}
+
+#screen3 img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #screen1 h1 {
+    font-size: 44px !important;
+  }
+  #screen2 .number {
+    top: 40px !important;
+    font-size: 75px !important;
+  }
+  #screen2 h4 {
+    font-size: 18px !important;
+  }
+  #screen2 p {
+    font-size: 16px !important;
+  }
+  #screen3 h3 {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  #screen3 p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  #screen3 .left {
+    border-right: 2px solid #2DAFD7;
+    border-radius: 5px 0 0 5px !important;
+  }
+  #screen3 .right {
+    border-left: 2px solid #2DAFD7;
+    border-radius: 0 5px 5px 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #screen2 .number {
+    top: 20px !important;
+    font-size: 120px !important;
+  }
+  #screen2 h4 {
+    font-size: 20px !important;
+  }
+  #screen2 p {
+    font-size: 18px !important;
+  }
+  #screen3 h3 {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+  #screen3 p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #screen2 .number {
+    top: 5px !important;
+    font-size: 144px !important;
+  }
+  #screen3 h3 {
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
+  #screen3 p {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    padding-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
