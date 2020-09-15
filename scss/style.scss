@@ -14,7 +14,7 @@ html, body {
 .hero-bg {
     position: absolute;
     width: 66%;
-    height: 1178px;
+    height: 1158px;
     left: 0px;
     top: 0px;
     background: $darker-bg;
@@ -54,6 +54,8 @@ header {
 
             .bg-white {
                 font-family: 'Rubik', sans-serif;
+                padding: 0 10px;
+                margin-left: -10px;
                 background-color: white;
             }
             
@@ -125,6 +127,14 @@ header {
     background-color: white;
     box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
     border-radius: 5px;
+    transition: all 1.5s ease-in-out;
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+
+    &.active {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
 
     .col {
         text-align: center;
@@ -208,6 +218,28 @@ header {
                 line-height: 22px;
                 letter-spacing: 0.04em;
                 margin: 0 20px;
+            }
+        }
+
+        .left {
+            transition: all .8s ease-in-out;
+            transform: translate3d(-100px, 0, 0);
+            opacity: 0;
+
+            &.active {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+
+        .right {
+            transition: all .8s ease-in-out;
+            transform: translate3d(100px, 0, 0);
+            opacity: 0;
+
+            &.active {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
             }
         }
     }

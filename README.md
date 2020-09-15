@@ -10,5 +10,4 @@ Difficulties with the task:
 - Poppins font from Google fonts is not the same as Poppins in Figma
 
 # Problems to fix
-- white bg in h1 should be wider
 - smooth scroll

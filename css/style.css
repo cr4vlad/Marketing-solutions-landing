@@ -13,7 +13,7 @@ html, body {
 .hero-bg {
   position: absolute;
   width: 66%;
-  height: 1178px;
+  height: 1158px;
   left: 0px;
   top: 0px;
   background: #F3FCFF;
@@ -60,6 +60,8 @@ header {
 
 #screen1 .left-block h1 .bg-white {
   font-family: 'Rubik', sans-serif;
+  padding: 0 10px;
+  margin-left: -10px;
   background-color: white;
 }
 
@@ -149,6 +151,17 @@ header {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
           box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
   border-radius: 5px;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  -webkit-transform: translate3d(0, 30px, 0);
+          transform: translate3d(0, 30px, 0);
+  opacity: 0;
+}
+
+#screen2.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 #screen2 .col {
@@ -243,6 +256,34 @@ header {
   line-height: 22px;
   letter-spacing: 0.04em;
   margin: 0 20px;
+}
+
+#screen3 .two-blocks .left {
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transform: translate3d(-100px, 0, 0);
+          transform: translate3d(-100px, 0, 0);
+  opacity: 0;
+}
+
+#screen3 .two-blocks .left.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+#screen3 .two-blocks .right {
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+  opacity: 0;
+}
+
+#screen3 .two-blocks .right.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 #screen3 img {
