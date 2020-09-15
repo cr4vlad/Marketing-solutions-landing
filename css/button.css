@@ -1,0 +1,43 @@
+.btn-outline {
+  color: #2DAFD7;
+  background-color: #ffffff;
+  border-color: #2DAFD7;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  padding: 18px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+  background: #2DAFD7;
+  color: #ffffff;
+  border-color: #2DAFD7;
+}
+
+.btn-color {
+  color: #fff;
+  background-color: #2DAFD7;
+  border-color: #2DAFD7;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  padding: 18px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus,
+.btn-color.active {
+  background: #005570;
+  color: #ffffff;
+  border-color: #005570;
+}
+/*# sourceMappingURL=button.css.map */

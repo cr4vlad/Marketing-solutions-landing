@@ -1,0 +1,45 @@
+@import "variables";
+
+.btn-outline {
+    color: $primary;
+    background-color: #ffffff;
+    border-color: $primary;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    padding: 18px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+    background: $primary;
+    color: #ffffff;
+    border-color: $primary;
+}
+  
+  
+.btn-color {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    padding: 18px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+  
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus,
+.btn-color.active {
+    background: $text-primary;
+    color: #ffffff;
+    border-color: $text-primary;
+}

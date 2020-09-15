@@ -2,9 +2,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #005570;
 }
 
-.screen1 {
+.hero-bg {
   position: absolute;
   width: 1041px;
   height: 1178px;
@@ -13,5 +14,185 @@
   background: #F3FCFF;
   border-radius: 0 100px 100px 0;
   z-index: -1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  color: #2DAFD7;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: url(../img/bg_logo.png) center no-repeat;
+}
+
+#screen1 {
+  width: 100%;
+}
+
+#screen1 .left-block h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 44px;
+  margin: 40px 0;
+  letter-spacing: 0.04em;
+}
+
+#screen1 .left-block h1 .bg-white {
+  font-family: 'Rubik', sans-serif;
+  background-color: white;
+}
+
+#screen1 .left-block h1 .telegram {
+  font-family: 'Rubik', sans-serif;
+  color: #2DAFD7;
+}
+
+#screen1 .left-block form {
+  width: 380px;
+}
+
+#screen1 .left-block form input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding-left: 50px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+          box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+}
+
+#screen1 .left-block form input::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 16px;
+  color: #99bbc6;
+}
+
+#screen1 .left-block form input:-ms-input-placeholder {
+  opacity: 1;
+  font-size: 16px;
+  color: #99bbc6;
+}
+
+#screen1 .left-block form input::-ms-input-placeholder {
+  opacity: 1;
+  font-size: 16px;
+  color: #99bbc6;
+}
+
+#screen1 .left-block form input::placeholder {
+  opacity: 1;
+  font-size: 16px;
+  color: #99bbc6;
+}
+
+#screen1 .left-block form #name {
+  background: white url(../img/icon-user.png) no-repeat 14px 20px;
+}
+
+#screen1 .left-block form #email {
+  background: white url(../img/icon-mail.png) no-repeat 14px 21px;
+}
+
+#screen1 .left-block form #tel {
+  background: white url(../img/icon-phone.png) no-repeat 14px 20px;
+}
+
+#screen1 .left-block form #send {
+  width: 100%;
+  height: 70px;
+  margin-top: 15px;
+  -webkit-box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2);
+          box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2);
+}
+
+#screen1 .left-block img.arrow {
+  width: 300px;
+  position: relative;
+  left: 405px;
+  top: -410px;
+  margin-bottom: -410px;
+}
+
+#screen1 img.phone {
+  width: 100%;
+  max-width: 300px;
+  padding-left: 20px;
+}
+
+#screen2 {
+  width: 100%;
+  max-height: 200px;
+  margin: 120px auto;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+          box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+  border-radius: 5px;
+}
+
+#screen2 .col {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#screen2 .col .number {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-size: 144px;
+  color: rgba(246, 246, 246, 0.8);
+  z-index: 0;
+}
+
+#screen2 .col h4 {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  z-index: 1;
+}
+
+#screen2 .col p {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  margin: 10px;
+  z-index: 1;
+}
+
+#screen2 .col:not(:last-child)::after {
+  content: ' ';
+  position: relative;
+  float: right;
+  bottom: 135px;
+  width: 5px;
+  height: 150px;
+  background: #F3FCFF;
+}
+
+#screen3 {
+  width: 100%;
+}
+
+#screen3 h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
 }
 /*# sourceMappingURL=style.css.map */

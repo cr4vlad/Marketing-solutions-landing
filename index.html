@@ -6,13 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Marketing Solutions - Landing</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
 </head>
-<body>
-    <div class="screen1"></div>
+<body class="smooth-scroll"> <!-- check if working! -->
+    <div class="hero-bg"></div>
+
     <div class="container-xl">
-        test content
+        <header>
+            <div class="logo">
+                TOP SIGNALS
+            </div>
+
+            <button type="button" class="btn btn-outline">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+        </header>
+
+        <div id="screen1" class="row">
+            <div class="col-sm-12 col-md-9 col-lg-8 left-block">
+                <h1><span class="bg-white">ТОРГОВЫЕ СИГНАЛЫ</span><br />ОТ ЭКСПЕРТА КАЖДЫЙ<br /> ДЕНЬ В ВАШЕМ <span class="telegram">TELEGRAM</span></h1>
+
+                <form>
+                    <input type="text" id="name" placeholder="Введите имя" />
+                    <input type="email" id="email" placeholder="E-mail" />
+                    <input type="tel" id="tel" placeholder="Телефон" />
+                    <button type="button" id="send" class="btn btn-color">ПОЛУЧИТЬ ДОСТУП</button>
+                </form>
+
+                <img class="arrow" src="img/telegram_arrow.png" />
+            </div>
+
+            <div class="col-md-3 col-lg-4 d-sm-none d-md-block">
+                <img class="phone" src="img/phone.png" alt="smartphone mockup" />
+            </div>
+        </div>
+
+        <div id="screen2" class="row">
+            <div class="col">
+                <span class="number">3</span>
+                
+                <h4>3 РЫНКА</h4>
+
+                <p>
+                    фондовый, товарный, валютный
+                </p>
+            </div>
+            
+            <div class="col">
+                <span class="number">15</span>
+                
+                <h4>15%</h4>
+                
+                <p>
+                    средняя доходность в месяц
+                </p>
+            </div>
+            
+            <div class="col">
+                <span class="number">10</span>
+                
+                <h4>ДО 10</h4>
+                
+                <p>
+                    торговых сигналов в день
+                </p>
+            </div>
+            
+            <div class="col">
+                <span class="number">90</span>
+                
+                <h4>ДО 90%</h4>
+                
+                <p>
+                    прибыльность сигналов
+                </p>
+            </div>
+            
+            <div class="col">
+                <span class="number">80</span>
+                
+                <h4>ОТ 80</h4>
+                
+                <p>
+                    пунктов за сделку
+                </p>
+            </div>
+        </div>
+
+        <div id="screen3" class="row">
+            
+        </div>
     </div>
 </body>
 </html>
